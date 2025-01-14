@@ -29,6 +29,22 @@ public class linearsearch {
 
         return false ;
     }
+
+    public static void Searchmin(int arr[]){
+
+       if (arr.length == 0 ) {
+         System.out.println("Array is empty");
+         return;
+       }
+       int min = arr[0];
+       for (int i = 1; i < arr.length; i++) {
+          if(arr[i] < min){
+            min = arr[i];
+          }
+       }
+       System.out.println("The min number in array is " + min);
+       return ;
+    }
     public static void main(String[] args) {
 
         // let an array of integer [ 12 , 2, 34 ,5 ,3, 6, 15, 75]
@@ -40,5 +56,7 @@ public class linearsearch {
         String name = "Sufyan";
         System.out.println(linearsearch.checkChar(name, 'f'));
 
+        int[] searchmin = { 12 , 2, 34 ,5 ,3, 6, 15, 75};
+        linearsearch.Searchmin(searchmin);
     }
 }
