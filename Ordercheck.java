@@ -49,8 +49,6 @@ class Ordercheck {
             return "unordered";
          }
       }
-
-
       // order agnostic binary search // 
 
       public static boolean search(int arr[] , int target){
