@@ -46,7 +46,7 @@ public class Binarysearchproblems {
          return -1 ;
      }
        int start = 0 ; 
-       int end = arr.length -1 ; 
+       int end = arr.length -1 ;   
        while (start <= end) {
           int mid = start + (end - start) / 2 ;
           if(target == arr[mid]){
@@ -98,7 +98,6 @@ public class Binarysearchproblems {
             end = start + 10 ;
         }
         return isFound;
-
    }
 
    // optimized way to solve the same problem ==> time complexity O(logn) use this approach to solve problem 
@@ -140,7 +139,6 @@ public class Binarysearchproblems {
     }
     return end;
    }
-
 
     public static void main(String[] args) {
         // int[] array = { 2 , 4, 5, 6 ,8, 9 , 11 , 89, 345};

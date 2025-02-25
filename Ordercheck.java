@@ -38,7 +38,7 @@ class Ordercheck {
             else if(arr[i] < arr[i+1]){
                 isDsc = false;
             }  
-         }
+         }  
          if(isAsc == true){
             return "Asc";
          }
