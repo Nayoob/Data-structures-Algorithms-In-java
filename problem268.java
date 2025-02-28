@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class problem268 {
 
@@ -23,7 +22,7 @@ public class problem268 {
 
     public static void main(String[] args) {
        int[] arr1 = {3 , 0 , 1}; 
-       int[] arr = {3 , 0 , 1 , 2};
+      // int[] arr = {3 , 0 , 1 , 2};
        System.out.println(problem268.Search(arr1));
     }
 }
