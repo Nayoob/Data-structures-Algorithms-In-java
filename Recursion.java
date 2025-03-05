@@ -1,10 +1,36 @@
 
+import java.util.Collections;
+import java.util.HashMap;
+
+
 public class Recursion {
     // lets learn what the heck is recurison why it gets so fucking confusing sometimes 
     // so what you need to do here is print sufyan 5 times we cant just call print() 5 times no cheating you nerd 
     // think about another solution what if use nested function calls that would work too lets give it a try 
 
+    public static int majorityElement(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
     
+        for(int i = 0 ; i < nums.length ; i++){
+            int Counter = 0 ;
+            int value = nums[i];
+            for(int j = 0 ; j < nums.length ; j++){
+               if(value == nums[j]){
+                 Counter++;
+               }
+            }
+            map.put(value , Counter);
+         } 
+        int maxValue = Collections.max(map.values());
+        int maxkey = -1 ;
+        for (int key : map.keySet()) {
+            if (map.get(key) == maxValue) {
+                maxkey = key ;
+                break;
+            }
+        }
+        return maxkey;
+    }
 
  /*    public static void print(){
         System.out.println("Sufyan");
@@ -91,17 +117,27 @@ public class Recursion {
              return BinarySearchWithRecursion(arr, target, mid + 1, end);
          }
 
+
     public static void main(String[] args) {
-         // print();
+
+        int[] testcase1 = {3,2,3};
+        int[] testcase2 = {2,2,1,1,1,2,2};
+        System.out.println(Recursion.majorityElement(testcase1));
+        System.out.println(Recursion.majorityElement(testcase2));
+
+        // print();
         // printNum(1);
         //  print(1);
 
         // System.out.println(Recursion.fibonnaci(6));
-        int[] array = { 1 , 3 , 6 , 8 , 9  , 23, 33 , 56 };
+
+  /*    int[] array = { 1 , 3 , 6 , 8 , 9  , 23, 33 , 56 };
         System.out.println(Recursion.BinarySearchWithRecursion(array, 23, 0, array.length -1));
         System.out.println(Recursion.BinarySearchWithRecursion(array, 3, 0, array.length -1));
         System.out.println(Recursion.BinarySearchWithRecursion(array, 41, 0, array.length -1));
-        System.out.println(Recursion.BinarySearchWithRecursion(array, 0, 0, array.length -1));
+        System.out.println(Recursion.BinarySearchWithRecursion(array, 0, 0, array.length -1));   */
+
+
         
     }
 }
