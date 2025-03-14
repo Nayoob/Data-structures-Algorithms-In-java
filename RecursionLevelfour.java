@@ -108,7 +108,7 @@ public class RecursionLevelfour {
       }
 
     public static ArrayList<ArrayList<Integer>> SubsetforDuplicate(int[] arr) {
-        Arrays.sort(arr);  // Step 1: Sort the array to bring duplicates together
+        Arrays.sort(arr); 
         ArrayList<ArrayList<Integer>> outer = new ArrayList<>();
         outer.add(new ArrayList<>());
 
@@ -117,11 +117,9 @@ public class RecursionLevelfour {
         for (int i = 0; i < arr.length; i++) {
             start = 0;
             
-            // If duplicate, start from the last batch of subsets only
             if (i > 0 && arr[i] == arr[i - 1]) {
                 start = end + 1;
-            }
-            
+            } 
             end = outer.size() - 1;
             int n = outer.size();
             
