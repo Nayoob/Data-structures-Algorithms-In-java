@@ -125,7 +125,9 @@ public class RecursionLevelSix {
         if (maze[row][column] == false) {
             return ;
         }
+
         maze[row][column] = false ;
+        
         if ( row  < maze.length - 1) {
             AllFourDirectionUsingBacktracking(processed + 'D' , maze ,  row + 1 , column);
         }

@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 
 public class NQueen {
     /* leet code 51 lets try to solve this one  */
@@ -45,7 +45,6 @@ public class NQueen {
                 matrix[row][col] = 'Q';
                 findsolution =  solveNQueen(matrix, row + 1, n) || findsolution ;
                 matrix[row][col] = '.';
-
             }
         }
         return findsolution;
