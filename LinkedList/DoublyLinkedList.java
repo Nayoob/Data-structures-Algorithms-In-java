@@ -151,6 +151,7 @@ public class DoublyLinkedList {
         size -= 1;
         return;
     }
+    
 
     public void printList(){
         Node temp = head ;
