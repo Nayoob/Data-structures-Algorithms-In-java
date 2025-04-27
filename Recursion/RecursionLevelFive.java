@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class RecursionLevelFive {
-
     /* permutations it just fucked me up during dry run  */
     public static void permutations(String proString , String unproString){
         if (unproString.isEmpty()) {
@@ -11,6 +10,7 @@ public class RecursionLevelFive {
             return;
         }
         char ch = unproString.charAt(0);
+        
         for (int i = 0; i < proString.length() + 1 ; i++) {
 
           String left = proString.substring(0,i);

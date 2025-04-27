@@ -30,6 +30,7 @@ public class MergeSort {
           }
           k++;
        }
+       
        while ( i < left.length) {
           mergedArray[k] = left[i];
           i++;
