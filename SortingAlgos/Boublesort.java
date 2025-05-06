@@ -12,11 +12,11 @@ public class Boublesort {
              * so we iterate again the inner loop the second highest element of the array will 
              * be positioned at the index : arr.length - 2 ; mean the second last 
              */
-            for (int j = 1; j < arr.length  ; j++) {
-                if (arr[j] < arr[j-1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j-1];
-                    arr[j-1] = temp; 
+            for (int j = 0; j < arr.length - 1 - i ; j++) {
+                if (arr[j] > arr[j+1]) {
+                    int temp = arr[j+1];
+                    arr[j+1] = arr[j];
+                    arr[j] = temp; 
                 }
             }
         }
