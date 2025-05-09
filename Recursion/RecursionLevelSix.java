@@ -160,6 +160,7 @@ public class RecursionLevelSix {
         if (maze[row][column] == false) {
             return ;
         }
+
         maze[row][column] = false ;
         path[row][column] = step;
         if ( row  < maze.length - 1) {
