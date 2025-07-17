@@ -14,7 +14,6 @@ public class BFS {
       vistedArr = new boolean[sizeofArray];
 
     }
-
     /* lets implemetn Breadth first search Using Queue  */
 
     static class Edge{
