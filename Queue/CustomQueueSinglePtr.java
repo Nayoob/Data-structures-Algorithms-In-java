@@ -16,6 +16,7 @@ public class CustomQueueSinglePtr {
     public CustomQueueSinglePtr(){
         this(DEFAULT_SIZE);
     }
+    
     public boolean isFull(){
         return endPtr == arr.length;
     }
